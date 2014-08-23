@@ -34,3 +34,6 @@ let g:ctrlp_max_height=30
 
 " Enable mosue 
 set mouse=a
+
+" Hide mouse after chars typed
+set mousehide

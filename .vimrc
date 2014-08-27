@@ -6,6 +6,7 @@ filetype off
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/The-NERD-tree'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 
@@ -19,6 +20,9 @@ set nocompatible
 
 " Turn on intentation
 filetype indent on
+
+" Enable filetype specific plugins
+filetype plugin on
 
 " Set tab size
 set tabstop=4

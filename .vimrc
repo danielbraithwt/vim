@@ -20,6 +20,13 @@ set nocompatible
 " Turn on intentation
 filetype indent on
 
+" Set tab size
+set tabstop=4
+set shiftwidth=4
+
+" Expand tabs to 4 spaces
+"set expandtab
+
 " Turn code foling off
 set nofoldenable
 

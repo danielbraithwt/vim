@@ -7,10 +7,15 @@ filetype off
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/The-NERD-tree'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 
 filetype plugin indent on
+
+" Set the color scheme
+set background=dark
+colorscheme base16-monokai
 
 " Turn syntax highlighting on
 syntax on

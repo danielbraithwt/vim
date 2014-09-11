@@ -8,10 +8,35 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/The-NERD-tree'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'chriskempson/base16-vim'
+Plugin 'bling/vim-airline'
+Plugin 'paranoida/vim-airlineish'
 
 call vundle#end()
 
 filetype plugin indent on
+
+" Enable Airline
+let g:airline_enable_branch=1
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
+set laststatus=2
+
+" Set airline theme
+let g:airline_theme='badwolf'
+
+" Enable powerline font for VIM
+if !exists('g:airline_symbols')
+   let g:airline_symbols = {}
+endif
+if !exists('g:airline_powerline_fonts')
+  let g:airline_left_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.linenr = ''
+ else
+  let g:airline_left_sep = '▶'
+  let g:airline_right_sep = '◀'
+endif
 
 " Set the color scheme
 set background=dark

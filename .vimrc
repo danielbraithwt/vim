@@ -38,6 +38,10 @@ if !exists('g:airline_powerline_fonts')
   let g:airline_right_sep = '◀'
 endif
 
+" Config NERDTree
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR> " Map Ctrl+n to toggle NERD Tree
+
 " Set the color scheme
 set background=dark
 colorscheme base16-monokai

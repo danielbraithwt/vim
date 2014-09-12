@@ -41,6 +41,7 @@ endif
 " Config NERDTree
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR> " Map Ctrl+n to toggle NERD Tree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Make NERD tree auto close
 
 " Set the color scheme
 set background=dark

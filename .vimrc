@@ -2,7 +2,6 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmaric/vundle.vim'
-filetype off
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/The-NERD-tree'
@@ -10,6 +9,9 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'paranoida/vim-airlineish'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'pangloss/vim-javascript'
+"Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -44,8 +46,12 @@ map <C-n> :NERDTreeToggle<CR> " Map Ctrl+n to toggle NERD Tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Make NERD tree auto close
 
 " Set the color scheme
+set t_Co=256
 set background=dark
-colorscheme base16-monokai
+colorscheme base16-mocha
+
+" Detect what sorta file is being edited
+filetype on
 
 " Turn syntax highlighting on
 syntax on

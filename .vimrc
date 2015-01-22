@@ -11,7 +11,7 @@ Plugin 'bling/vim-airline'
 Plugin 'paranoida/vim-airlineish'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 

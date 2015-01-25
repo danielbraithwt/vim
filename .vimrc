@@ -15,6 +15,9 @@ Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
+" Detect JADE Files
+au BufNewFile,BufReadPost *.jade set filetype=jade
+
 filetype plugin indent on
 
 " Enable Airline
